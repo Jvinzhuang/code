@@ -93,7 +93,7 @@ void sig_exit()
 int main()
 {
 	//函数指针指向destroy函数，main函数结束后调用此函数
-   atexit(destroy);
+   	atexit(destroy);
 
 	printf("退出服务器请按CTRL+C\n");
 	signal(SIGINT,sig_exit);
